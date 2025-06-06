@@ -36,7 +36,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .site-header {
@@ -86,7 +85,7 @@
 }
 
 /* For mobile nav */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .nav-links {
     position: absolute;
     top: 100%;
@@ -98,20 +97,20 @@
     display: none;
   }
 
-  .nav-links.active {
+  /* .nav-links.active {
     display: flex;
-  }
+  } */
 
   .menu-toggle {
     display: block;
-    background: none;
+    /* background: none;
     border: none;
     color: var(--text-light);
     font-size: 1.8rem;
-    cursor: pointer;
+    cursor: pointer; */
   }
 }
 
-/* .menu-toggle {
+.menu-toggle {
   display: none;
-} */
+}
