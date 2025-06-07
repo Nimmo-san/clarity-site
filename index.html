@@ -51,8 +51,22 @@
         <p class="tagline">Coming Soon!</p>
         <p>Your go-to app for journaling, reflection, and personal growth.</p>
         <p>Ready to fight for that promise you made to yourself!</p>
-        <button class="notify-btn">Notify Me</button>
       </main>
     </section>
+
+    <section class="notify">
+      <p class="tagline">Be the First to Know</p>
+      <form id="notify-form">
+        <input
+          type="email"
+          id="notify-email"
+          placeholder="Enter your email"
+          required
+        />
+        <button class="notify-btn" type="submit">Notify Me</button>
+        <p id="notify-message" class="message"></p>
+      </form>
+    </section>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
