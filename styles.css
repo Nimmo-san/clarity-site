@@ -101,12 +101,14 @@ main .coming-soon {
   text-transform: uppercase;
 }
 
+/* Notify form */
 .notify {
   background-color: var(--muted);
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   height: fit-content;
+  margin-bottom: 2.5rem;
 }
 
 .coming-soon-bg,
