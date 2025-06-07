@@ -38,7 +38,7 @@
 body {
   font-family: var(--font-body);
 
-  background-image: url(images/background.webp);
+  background-image: url(https://nimmo-san.github.io/clarity-site/images/background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -66,6 +66,11 @@ p {
   margin-bottom: 2rem;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 main .coming-soon {
   margin: 0;
   min-height: 100vh;
@@ -90,14 +95,22 @@ main .coming-soon {
   opacity: 0.75;
   font-family: var(--font-body);
   font-size: var(--fs-h3);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
 .notify {
-  min-width: 600;
+  background-color: var(--muted);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.coming-soon-bg,
+.notify {
   margin-top: 2rem;
   text-align: center;
 }
@@ -132,10 +145,17 @@ main .coming-soon {
   border: 1px solid var(--muted);
   color: var(--text-light);
   background-color: var(--bg-dark);
-  /* border-radius: var(--border-radius); */
+  border-radius: var(--border-radius);
   width: 100%;
   max-width: 300px;
 }
+
+#notify-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
 
 .message {
   font-size: 0.9rem;
@@ -144,8 +164,20 @@ main .coming-soon {
 }
 
 @media (max-width: 768px) {
-  body {
+  /* body {
     background-attachment: scroll;
     background-position: top center;
+  } */
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coming-soon-bg,
+  .notify {
+    min-width: auto;
+    width: 100%;
+    padding: 2rem 1rem;
   }
 }
